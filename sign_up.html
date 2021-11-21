@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Filipe Moreira, Kevin Darby, HongLin" />
+    <title>Los Pollos Hermanos | Restaurant</title>
+    <link rel="stylesheet" href="css/contact-us.css">
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png"/>
+
+<style>
+   #container1{
+  background-color: rgb(244, 159, 62);
+  opacity:0.9;
+
+  border-radius: 10px;
+  border: solid 2px rgb(248, 248, 248);
+  width: 500px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px 5px rgb(248, 248, 248);
+  
+  margin: 100px auto;
+  
+}
+
+input[type="text"],
+
+input[type="email"] {
+  width: 100%;
+  margin-top: 10px;
+  
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 3px;
+}
+input[type="password"]{
+    width: 100%;
+  margin-top: 10px;
+  margin-right: 250px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 3px;
+}
+
+
+.header {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  background-color: teal;
+  opacity:0.8;
+  color: white;
+  border-radius: 5px;
+ 
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background-color: teal;
+  font-size: 11px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  opacity:0.8;
+  width: 58px;
+  height: 39px;
+  margin-left: 180px;
+  
+}
+
+input[type="password"] {
+  padding-right: 0px;
+}
+
+input[type="checkbox"] {
+  margin-left: 30px;
+ 
+}
+.check {
+  color: teal;
+  font-size: 9px;
+  opacity:0.8;
+  
+}
+
+fieldset {
+  background-color: rgb(248, 248, 248);
+  border: transparent;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.header1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+p {
+  color: teal;
+  opacity:0.8;
+  font-size: 22px;
+}
+
+
+
+textarea {
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 453px;
+}
+#n1 {
+    margin-left: -240px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+
+}
+
+#n2 {
+  margin-left: -300px;
+  margin-bottom: -20px;
+}
+#n3 {
+  margin-left: -340px;
+  margin-bottom: -20px;
+}
+#n4 {
+  margin-left: -240px;
+  margin-bottom: -20px;
+} 
+td{
+    color: teal;
+    opacity:0.8;
+}
+
+#appdownloadleft1{
+    clear: left;
+    margin-left: 230px;
+}
+
+#appdownloadright1{
+   float: right;
+   margin-right: 230px;
+  margin-top: -50px;
+}
+
+.bon a{ 
+   font-size: 12px;
+      color: white;
+      border: 12px solid transparent;
+      text-decoration: none;
+      background-color: teal;
+      border-radius: 5px;
+      margin-left: 12px;
+      opacity:0.8;
+      }  
+  .btn{
+     border: 11px solid transparent;
+     color: white;
+     background-color: teal;
+     border-radius: 5px;
+     margin-left:180px ;
+     font-size: 12px;
+     opacity:0.8;
+     padding: 1.5px 0;
+    
+ }
+     
+@media screen and (min-device-width: 600px) and( max-device-width:800px) {
+  header{
+   width:600px ;
+   float: left;
+  }
+  div{
+      width: 600px;
+      float: left;
+  }
+
+}
+</style>
+</head>
+<body>
+    <header>
+        <img src="images/Los_Pollos_Hermanos_logo.png" alt="Logo of Los Pollos Hermanos" />
+        <h1 onmouseover="style.color='yellow'"
+        onmouseout="style.color='black'">Fast-food restaurant</h1>
+        <nav>
+            <h2  ><a href="index.html"
+                >Home</a></h2>
+            <h2><a href="check-menu.html" 
+                >Menu</a></h2>
+            <h2><a href="promotions.html"
+                 >Promotions</a></h2>
+            <h2><a href="booking.html"
+                >Booking</a></h2>
+                
+                    <h2><a href="contact-us.html" 
+                        >Contact Us</a></h2>  
+                        <h2><a href="delivery.html" 
+                            >Delivery</a></h2>  
+                        
+                        <h2><a href="coupons.html" 
+                            >Coupon</a></h2>
+        </nav>
+    </header>
+    <main>
+        <form>
+       
+            <div id="container1">
+                <div class="header">
+                    <h1>Sign Up Now!</h1>
+                    <div class=header1>Sign up and tell us what you think of the site! </div>
+                </div>
+    
+    
+    
+               <div id="n1"><p>Full Name & Address </p> </div>
+    
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="uname">User Name</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="uname"  placeholder="Enter your user name"/>
+                            </td>
+                        </tr>                    
+                  
+                        <tr>
+                            <td>
+                                <label for="address">Address</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="address" size=30 maxlength="50" />
+                            </td>
+    
+                        </tr>
+                    </table>
+    
+    
+                </fieldset>
+                <div id="n2"> <p >Email & Phone</p></div>
+                <fieldset>
+    
+    
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="email_address">Email Address</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" id="email_address" placeholder=" +@examp.com " size ="45"  maxlength="50" autofocus="autofocus"/>
+                                    
+    
+                            </td>
+    
+                        </tr>
+                       
+                        <tr>
+                            <td>
+                                <label for="telNo">Phone Number</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="telNo" placeholder="(888)-(000)-(0000)" size="20" maxlength="20"
+                                    pattern="(0-9){3}-90-9){3}-(0-9{4}" />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <div id="n3">  <p> Passwords</p></div>
+                <fieldset>
+    
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="upass">Password</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="upass" type="password" name="psw" 
+                                    placeholder="Password must contain at least 6 characters and no more than" minlength="6"
+                                     />
+                            </td>
+                        </tr>      
+                        <tr>
+                            <td>
+                                <label for="confirm_password">Confirm Password</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="pwd" id="pwd1" minlength="6"
+                                    placeholder="confirm passowrd must mutch the password value" required="required" />
+                            </td>
+    
+                        </tr>
+                    </table>
+                </fieldset>
+    
+    
+    
+                <div class="clear">
+                    <button type="button" class="btn " onclick="fnLogin()" onmouseover="style.color='red'"
+                    onmouseout="style.color='orange'">Sign up</button>
+                       <span class='bon'> 
+                    <span class='bon'> <a href='log_in.html' onmouseover="style.color='red'"
+                        onmouseout="style.color='orange'" >Log in</a></span></div>
+                    <label class="check">
+                        <input type="checkbox" checked="checked" name="agree" style="margin-bottom:15px" > You agree our Team
+                        and Policy
+                    </label>
+              
+    
+    
+    
+            </div>
+        </form> 
+
+        <div id="appdownloadleft1">
+            <a href="https://www.apple.com/ca/app-store/"><img id="appstore2" src="images/App-Store-resized.jpg"
+                    alt="Download our app on App Store" /></a>
+        </div>
+        <div id="appdownloadright1">
+            <a href="https://play.google.com/"><img id="googleplay2" src="images/Google-Play-resized.png"
+                alt="Download our app on Google Play" /></a>
+        </div>
+        
+    </main>
+    <footer>
+        <h2>About Us</h2>
+        <h2>Privacy Policy</h2>
+        <h2>Terms &amp; Conditions</h2>
+        <h2>FAQs</h2>
+        <h2>Delivery</h2>
+        <h3>&copy;2021 Los Pollos Hermanos'. All Rights Reserved.</h3>
+    </footer>
+    <script>
+        function fnLogin(){
+      var oUname = document.getElementById("uname")
+      if ( oUname.value == "") {
+       window.alert("name cannot be empty")
+       return;
+      }
+     
+    
+      if (oUname.value.length <3) {
+       window.alert("please enter at least 3 characters")
+       return;
+      }
+     
+     if((oUname.value.charCodeAt(0)>=48) && (oUname.value.charCodeAt(0)<=57)){
+        window.alert( "the first character must be a letter.");
+       return;
+      }
+      var oAddress = document.getElementById("address")
+      if ( oAddress .value == "") {
+       window.alert("address cannot be empty")
+       return;
+      }
+     
+    
+      var oEmail = document.getElementById("email_address").value;
+    
+     
+      if(!/^([a-zA-Z0-9])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(oEmail)){
+        alert("invalid email address!");return; 
+      }
+      var otelNo = document.getElementById("telNo")
+      if ( otelNo .value == "") {
+       window.alert("phone number cannot be empty")
+       return;
+      }
+         var oUpass = document.getElementById("upass")
+         if  ( oUpass.value =="") {
+        window.alert( "password must be at least 6 characters")
+         
+       return;}
+    
+      if  ( oUpass.value.length < 6) {
+        window.alert( "password must be at least 6 characters")
+         
+       return;} 
+
+       var opwd1 = document.getElementById("pwd1")
+         if  ( opwd1.value =="") {
+        window.alert( "confirm password can not be empty")
+         
+       return;}
+       if  ( opwd1.value !== oUpass.value) {
+        window.alert( "password not match")
+         
+       return;}
+      
+        else
+
+       window.location.href="sign_up_completed.html";
+         }
+     </script>
+    
+
+ </script>
+
+ <script>
+     
+</script>
+    </body>
+    </html>
